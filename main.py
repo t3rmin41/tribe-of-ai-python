@@ -41,3 +41,22 @@ def modulus(n):
 n = 15
 
 #print("modulus(n) =", modulus(n))
+
+def simpleSort(arr):
+    n = len(arr)
+    for i in range(n):
+        j = 0
+        stop = n - i
+        while j < stop - 1:
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+            j += 1
+    return arr
+
+arr1 = [2, 4, 1, 5]
+print("arr1 sorted :", simpleSort(arr1))
+
+def baseConversion(n, x):
+    return hex(int(str(n), x))[2::]
+
+print("n in HEX :", baseConversion(n, 10))
