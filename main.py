@@ -59,4 +59,37 @@ print("arr1 sorted :", simpleSort(arr1))
 def baseConversion(n, x):
     return hex(int(str(n), x))[2::]
 
-print("n in HEX :", baseConversion(n, 10))
+#print("n in HEX :", baseConversion(n, 10))
+
+def allLongestStrings(inputArray):
+    maxLength = 0
+    result = []
+    for s in inputArray :
+        if (len(s) > maxLength) :
+            maxLength = len(s)
+    for s in inputArray :
+        if (len(s) == maxLength) :
+            result.append(s)
+    return result
+
+arr2 = ["aba", "aa", "ad", "vcd", "aba"]
+
+print("Max length strings :", allLongestStrings(arr2))
+
+'''
+def commonCharacterCount(s1, s2):
+    count = 0
+    commonChars = []
+    for c1 in s1 :
+        if (c1 not in commonChars) :
+            commonChars.append(c1)
+        for c2 in s2:
+            if (c2 in commonChars):
+                count += 1
+    return count
+
+s1 = "aabcc"
+s2 = "adcaa"
+
+print("Common character count :", commonCharacterCount(s1, s2))
+'''
