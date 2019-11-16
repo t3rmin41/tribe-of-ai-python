@@ -123,3 +123,6 @@ print("Is sequence4 almost increasing?", almostIncreasingSequence(sequence4))
 print("Is sequence5 almost increasing?", almostIncreasingSequence(sequence5))
 print("Is sequence6 almost increasing?", almostIncreasingSequence(sequence6))
 print("Is sequence7 almost increasing?", almostIncreasingSequence(sequence7))
+
+def catWalk(code):
+    return " ".join(code.split())

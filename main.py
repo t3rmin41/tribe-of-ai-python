@@ -166,10 +166,21 @@ matrix2 = [[1,1,1,0],
 print("matrixElementsSum(matrix1) :", matrixElementsSum(matrix1))
 print("matrixElementsSum(matrix2) :", matrixElementsSum(matrix2))
 
+def alternatingSums(a):
+    team1 = []
+    team2 = []
+    weightsOfTeams = []
+    for i in range(0, len(a)) :
+        if i % 2 == 0 :
+            team1.append(a[i])
+        else: team2.append(a[i])
+    weightsOfTeams.append(sum(team1))
+    weightsOfTeams.append(sum(team2))
+    return weightsOfTeams
 
+a = [50, 60, 60, 45, 70]
 
-
-
+print("alternatingSums(a)", alternatingSums(a))
 
 
 
