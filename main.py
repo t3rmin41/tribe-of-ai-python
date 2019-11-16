@@ -77,6 +77,7 @@ arr2 = ["aba", "aa", "ad", "vcd", "aba"]
 
 print("Max length strings :", allLongestStrings(arr2))
 '''
+'''
 def commonCharacterCount(s1, s2):
     count = 0
     commonChars = []
@@ -96,7 +97,26 @@ s1 = "aabcc"
 s2 = "adcaa"
 
 print("Common character count :", commonCharacterCount(s1, s2))
+
+def isLucky(n):
+    sum1 = 0
+    sum2 = 0
+    stringRepresentation = str(n)
+    number = ((str(n)[:len(stringRepresentation)//2]), (str(n)[len(stringRepresentation)//2:]))
+    for i in range(0, len(number[0])) :
+        sum1 += int(number[0][i])
+    for j in range(0, len(number[1])) :
+        sum2 += int(number[1][j])
+    return sum1 == sum2
+
+n = 1230
+
+print("isLucky(n)", isLucky(n))
+
 '''
+
+
+
 
 def matrixElementsSum(matrix):
     sum = 0
@@ -128,7 +148,7 @@ matrix2 = [[1,1,1,0],
 
 print("matrixElementsSum(matrix1) :", matrixElementsSum(matrix1))
 print("matrixElementsSum(matrix2) :", matrixElementsSum(matrix2))
-'''
+
 
 
 
