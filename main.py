@@ -115,8 +115,25 @@ print("isLucky(n)", isLucky(n))
 
 '''
 
+def sortByHeight(a):
+    people = []
+    for element in a :
+        if element > 0 :
+            people.append(element)
+    people.sort()
+    i = 0
+    j = 0
+    while i < len(a) :
+        if a[i] > 0 :
+            a[i] = people[j]
+            j += 1
+        i += 1
+    return a
 
 
+a = [-1, 150, 190, 170, -1, -1, 160, 180]
+
+print("sortByHeight(a)", sortByHeight(a))
 
 def matrixElementsSum(matrix):
     sum = 0
