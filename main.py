@@ -76,16 +76,20 @@ def allLongestStrings(inputArray):
 arr2 = ["aba", "aa", "ad", "vcd", "aba"]
 
 print("Max length strings :", allLongestStrings(arr2))
-
+'''
 def commonCharacterCount(s1, s2):
     count = 0
     commonChars = []
+    commonCharAppearances = []
     for c1 in s1 :
-        if (c1 not in commonChars) :
+        if (c1 in s2 and c1 not in commonChars) :
             commonChars.append(c1)
-        for c2 in s2:
-            if (c2 in commonChars):
-                count += 1
+    for char in commonChars :
+        count1 = s1.count(char)
+        count2 = s2.count(char)
+        if count1 < count2 :
+            count += count1
+        else: count += count2
     return count
 
 s1 = "aabcc"
@@ -124,6 +128,7 @@ matrix2 = [[1,1,1,0],
 
 print("matrixElementsSum(matrix1) :", matrixElementsSum(matrix1))
 print("matrixElementsSum(matrix2) :", matrixElementsSum(matrix2))
+'''
 
 
 
