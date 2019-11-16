@@ -1,3 +1,4 @@
+'''
 xs = [()]
 
 res = [False] * 2
@@ -76,7 +77,6 @@ arr2 = ["aba", "aa", "ad", "vcd", "aba"]
 
 print("Max length strings :", allLongestStrings(arr2))
 
-'''
 def commonCharacterCount(s1, s2):
     count = 0
     commonChars = []
@@ -93,3 +93,65 @@ s2 = "adcaa"
 
 print("Common character count :", commonCharacterCount(s1, s2))
 '''
+
+def matrixElementsSum(matrix):
+    sum = 0
+    score = 0
+    lowerThanScoreFound = False
+    for i in range(0, len(matrix)):
+        for j in range(0, len(matrix[i])):
+            if i == 0 :
+                sum += matrix[i][j]
+            if i > 0 :
+                k = 0
+                while k < i:
+                    if matrix[k][j] <= score :
+                        lowerThanScoreFound = True
+                    k += 1
+                if not lowerThanScoreFound :
+                    sum += matrix[i][j]
+                lowerThanScoreFound = False
+    return sum
+
+
+matrix1 = [[0, 1, 1, 2],
+          [0, 5, 0, 0],
+          [2, 0, 3, 3]]
+
+matrix2 = [[1,1,1,0],
+           [0,5,0,1],
+           [2,1,3,10]]
+
+print("matrixElementsSum(matrix1) :", matrixElementsSum(matrix1))
+print("matrixElementsSum(matrix2) :", matrixElementsSum(matrix2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
