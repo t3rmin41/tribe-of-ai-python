@@ -1,4 +1,4 @@
-from tribe.ai.intro.JourneyBegins import centuryFromYear, checkPalindrome
+from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight
 from tribe.ai.intro.ExploringWaters import alternatingSums
