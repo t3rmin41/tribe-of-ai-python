@@ -1,7 +1,7 @@
 from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
-from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar
+from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange
 
 '''
 
@@ -116,5 +116,15 @@ b4 = [832, 998, 148, 570, 533, 455, 561, 455, 894, 147, 894, 279]
 #print(areSimilar(a2, b2))
 #print("areSimilar(", a3, ",", b3, ") : ", end = "")
 #print(areSimilar(a3, b3))
-print("areSimilar(", a4, ",", b4, ") : ", end = "")
-print(areSimilar(a4, b4))
+#print("areSimilar(", a4, ",", b4, ") : ", end = "")
+#print(areSimilar(a4, b4))
+
+arr1 = [1, 1, 1]
+arr2 = [1, 2, 3]
+arr3 = [-1000, 0, -2, 0]
+#print("arrayChange(", arr1, ") : ", end = "")
+#print(arrayChange(arr1))
+#print("arrayChange(", arr2, ") : ", end = "")
+#print(arrayChange(arr2))
+print("arrayChange(", arr3, ") : ", end = "")
+print(arrayChange(arr3))
