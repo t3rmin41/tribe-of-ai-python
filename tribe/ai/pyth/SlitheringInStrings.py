@@ -3,3 +3,6 @@ def fixMessage(message):
 
 def catWalk(code):
     return " ".join(code.split())
+
+def convertTabs(code, x):
+    return code.replace("\t", " "*x)

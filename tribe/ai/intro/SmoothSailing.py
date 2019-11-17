@@ -49,3 +49,10 @@ def sortByHeight(a):
             j += 1
         i += 1
     return a
+
+def reverseInParentheses(inputString):
+    reversed = None
+    textInBrackets = []
+    while "(" in inputString:
+        textInBrackets.append(inputString[::])
+    return reversed

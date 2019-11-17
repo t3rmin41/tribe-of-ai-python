@@ -1,7 +1,9 @@
 from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
-from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight
+from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from tribe.ai.intro.ExploringWaters import alternatingSums
+
+'''
 
 year1 = 1700
 year2 = 1905
@@ -81,3 +83,13 @@ print("sortByHeight(a)", sortByHeight(a1))
 a2 = [50, 60, 60, 45, 70]
 
 print("alternatingSums(a)", alternatingSums(a2))
+
+'''
+
+s1 = "(bar)"
+s2 = "foo(bar)baz"
+s3 = "foo(bar(baz))blim"
+
+print("reverseInParentheses[ ", s1, " ] : ", reverseInParentheses(s1), sep = '')
+print("reverseInParentheses[ ", s3, " ] : ", reverseInParentheses(s2), sep = '')
+print("reverseInParentheses[ ", s3, " ] : ", reverseInParentheses(s3), sep = '')

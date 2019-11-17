@@ -1,5 +1,5 @@
 from tribe.ai.pyth.MeetPyth import countBits, countBitsInLoop, modulus, simpleSort, baseConversion, mexFunction
-from tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk
+from tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk, convertTabs
 
 n = 4
 
@@ -36,6 +36,10 @@ line = "def      m   e  gaDifficu     ltFun        ction(x):"
 
 print("Cat walk fixed line:", catWalk(line))
 
+c = "\treturn False"
+x = 4
+
+print("convertTabs(", c , ") =", convertTabs(c, x))
 
 
 
