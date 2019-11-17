@@ -51,3 +51,6 @@ def arrayChange(inputArray):
                 inputArray[i] += 1
                 movesCount += 1
     return movesCount
+
+def palindromeRearranging(inputString):
+    return False

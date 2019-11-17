@@ -1,7 +1,8 @@
 from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
-from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange
+from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
+from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong
 
 '''
 
@@ -128,3 +129,15 @@ arr3 = [-1000, 0, -2, 0]
 #print(arrayChange(arr2))
 print("arrayChange(", arr3, ") : ", end = "")
 print(arrayChange(arr3))
+
+s4 = "aabb"
+print("palindromeRearranging(", s4, ") : ", end = "")
+print(palindromeRearranging(s4))
+
+yourLeft = 10
+yourRight = 15
+friendsLeft = 15
+friendsRight = 10
+
+print("areEquallyStrong(", yourLeft, ",", yourRight, ",", friendsLeft, ",", friendsRight, ") : ", end = "")
+print(areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight))
