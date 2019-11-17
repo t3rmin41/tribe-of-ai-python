@@ -1,7 +1,7 @@
 from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
-from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder
+from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar
 
 '''
 
@@ -91,9 +91,30 @@ s3 = "foo(bar(baz))blim"
 print("reverseInParentheses[ ", s1, " ] : ", reverseInParentheses(s1), sep = '')
 print("reverseInParentheses[ ", s3, " ] : ", reverseInParentheses(s2), sep = '')
 print("reverseInParentheses[ ", s3, " ] : ", reverseInParentheses(s3), sep = '')
-'''
 
 picture = ["abc",
            "ded"]
 print("addBorder(", picture, ") :", end = " ")
 print(addBorder(picture))
+'''
+
+a1 = [1, 2, 3]
+b1 = [1, 2, 3]
+
+a2 = [1, 2, 3]
+b2 = [2, 1, 3]
+
+a3 = [1, 2, 2]
+b3 = [2, 1, 1]
+
+a4 = [832, 998, 148, 570, 533, 561, 894, 147, 455, 279]
+b4 = [832, 998, 148, 570, 533, 561, 455, 147, 894, 279]
+
+#print("areSimilar(", a1, ",", b1, ") : ", end = "")
+#print(areSimilar(a1, b1))
+print("areSimilar(", a2, ",", b2, ") : ", end= "")
+print(areSimilar(a2, b2))
+print("areSimilar(", a3, ",", b3, ") : ", end = "")
+print(areSimilar(a3, b3))
+print("areSimilar(", a4, ",", b4, ") : ", end = "")
+print(areSimilar(a4, b4))

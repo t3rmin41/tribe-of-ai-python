@@ -20,3 +20,17 @@ def addBorder(picture):
         picture[i] = borderedLine
         i += 1
     return picture
+
+def areSimilar(a, b):
+    #TODO: fix this algorithm
+    for i in range(0, len(a)):
+        if a[i] is not b[i] :
+            for j in range(0, len(b)):
+                if b[j] == a[i] :
+                    b[i], b[j] = b[j], b[i]
+            break
+        break
+    for k in range(0, len(a)):
+        if (a[k] is not b[k]):
+            return False
+    return True
