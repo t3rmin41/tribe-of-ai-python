@@ -129,9 +129,8 @@ arr4 = [22121, 42080, -51776, -28528, 39895, -50842, 25463, 46187, -29518, 42293
 #print(arrayChange(arr1))
 #print("arrayChange(", arr2, ") : ", end = "")
 #print(arrayChange(arr2))
-#print("arrayChange(", arr3, ") : ", end = "")
-#print(arrayChange(arr3))
-
+print("arrayChange(", arr3, ") : ", end = "")
+print(arrayChange(arr3))
 print("arrayChange( arr4 ) : ", end = "")
 print(arrayChange(arr4))
 

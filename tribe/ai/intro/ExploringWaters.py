@@ -39,19 +39,24 @@ def areSimilar(a, b):
 
 import time
 def arrayChange(inputArray):
-    #TODO: optimize for execution time
     start_time = time.time()
     movesCount = 0
     listLengthMinusOne = len(inputArray)-1
     for i in range(0, listLengthMinusOne) :
         if not inputArray[i+1] > inputArray[i] and inputArray[i+1] <= inputArray[i] :
-            while not inputArray[i+1] > inputArray[i] :
-                inputArray[i+1] += 1
-                movesCount += 1
+            diff = inputArray[i] - inputArray[i+1]
+            inputArray[i+1] += diff + 1
+            movesCount += diff + 1
+            #while not inputArray[i+1] > inputArray[i] :
+            #    inputArray[i+1] += 1
+            #    movesCount += 1
         elif not inputArray[i+1] > inputArray[i] and inputArray[i+1] >= inputArray[i] :
-            while not inputArray[i+1] > inputArray[i] :
-                inputArray[i] += 1
-                movesCount += 1
+            diff = inputArray[i] - inputArray[i + 1]
+            inputArray[i] += diff + 1
+            movesCount += diff + 1
+            #while not inputArray[i+1] > inputArray[i] :
+            #    inputArray[i] += 1
+            #    movesCount += 1
     print("arrayChange() execution time %s seconds" % (time.time() - start_time))
     return movesCount
 
