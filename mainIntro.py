@@ -107,14 +107,14 @@ b2 = [2, 1, 3]
 a3 = [1, 2, 2]
 b3 = [2, 1, 1]
 
-a4 = [832, 998, 148, 570, 533, 561, 894, 147, 455, 279]
-b4 = [832, 998, 148, 570, 533, 561, 455, 147, 894, 279]
+a4 = [832, 998, 148, 570, 533, 455, 561, 894, 894, 147, 455, 279]
+b4 = [832, 998, 148, 570, 533, 455, 561, 455, 894, 147, 894, 279]
 
 #print("areSimilar(", a1, ",", b1, ") : ", end = "")
 #print(areSimilar(a1, b1))
-print("areSimilar(", a2, ",", b2, ") : ", end= "")
-print(areSimilar(a2, b2))
-print("areSimilar(", a3, ",", b3, ") : ", end = "")
-print(areSimilar(a3, b3))
+#print("areSimilar(", a2, ",", b2, ") : ", end= "")
+#print(areSimilar(a2, b2))
+#print("areSimilar(", a3, ",", b3, ") : ", end = "")
+#print(areSimilar(a3, b3))
 print("areSimilar(", a4, ",", b4, ") : ", end = "")
 print(areSimilar(a4, b4))

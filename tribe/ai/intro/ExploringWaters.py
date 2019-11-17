@@ -22,15 +22,17 @@ def addBorder(picture):
     return picture
 
 def areSimilar(a, b):
-    #TODO: fix this algorithm
+    swapOccured = False
     for i in range(0, len(a)):
-        if a[i] is not b[i] :
-            for j in range(0, len(b)):
-                if b[j] == a[i] :
+        if not a[i] == b[i] : # find on which position a[i] is not equal to b[i]
+            for j in range(0, len(a)):
+                if b[i] == a[j] and a[i] == b[j] : # find on which position a[j] is equal to b[i] and a[i] is equal to b[j]
                     b[i], b[j] = b[j], b[i]
+                    swapOccured = True
+                    break
+        if swapOccured :
             break
-        break
     for k in range(0, len(a)):
-        if (a[k] is not b[k]):
+        if not a[k] == b[k] :
             return False
     return True
