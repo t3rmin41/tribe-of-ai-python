@@ -25,4 +25,6 @@ def newStyleFormatting(s):
     return str(s).replace("%", "{}")
 
 def getCommit(commit):
-    return str(commit).split("!!")
+    return "".join([c for c in commit if c not in "0?+!"])
+
+
