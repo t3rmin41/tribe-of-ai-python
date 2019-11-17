@@ -9,3 +9,14 @@ def alternatingSums(a):
     weightsOfTeams.append(sum(team1))
     weightsOfTeams.append(sum(team2))
     return weightsOfTeams
+
+def addBorder(picture):
+    lineLength = len(picture[0])
+    picture.insert(0, "*" * lineLength)
+    picture.append("*" * lineLength)
+    i = 0
+    for line in picture:
+        borderedLine = "*" + line + "*"
+        picture[i] = borderedLine
+        i += 1
+    return picture
