@@ -1,6 +1,7 @@
 from tribe.ai.pyth.MeetPyth import countBits, countBitsInLoop, modulus, simpleSort, baseConversion, mexFunction
 from tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk, convertTabs, \
     feedbackReview, isWordPalindrome, permutationCipher, competitiveEating, newStyleFormatting, getCommit
+from tribe.ai.pyth.LurkingInLists import listsConcatenation
 
 '''
 n = 4
@@ -56,7 +57,11 @@ s2 = "%d%d%%-growth in products is expected quite soon"
 print("newStyleFormatting[", s1, "] :", newStyleFormatting(s1))
 print("newStyleFormatting[", s2, "] :", newStyleFormatting(s2))
 
-'''
-
 commit = "0??+0+!!someCommIdhsSt"
 print("getCommit[", commit, "] :", getCommit(commit))
+
+'''
+
+lst1 = [2, 2, 1]
+lst2 = [10, 11]
+print("listsConcatenation(", lst1, ",", lst2, ") :", listsConcatenation(lst1, lst2))
