@@ -37,8 +37,10 @@ def areSimilar(a, b):
             return False
     return True
 
+import time
 def arrayChange(inputArray):
     #TODO: optimize for execution time
+    start_time = time.time()
     movesCount = 0
     listLengthMinusOne = len(inputArray)-1
     for i in range(0, listLengthMinusOne) :
@@ -50,6 +52,7 @@ def arrayChange(inputArray):
             while not inputArray[i+1] > inputArray[i] :
                 inputArray[i] += 1
                 movesCount += 1
+    print("arrayChange() execution time %s seconds" % (time.time() - start_time))
     return movesCount
 
 def palindromeRearranging(inputString):
