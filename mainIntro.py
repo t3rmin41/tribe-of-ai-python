@@ -134,9 +134,9 @@ print(arrayChange(arr3))
 print("arrayChange( arr4 ) : ", end = "")
 print(arrayChange(arr4))
 
-#s4 = "aabb"
-#print("palindromeRearranging(", s4, ") : ", end = "")
-#print(palindromeRearranging(s4))
+s4 = "accababa"
+print("palindromeRearranging(", s4, ") : ", end = "")
+print(palindromeRearranging(s4))
 
 yourLeft = 10
 yourRight = 15

@@ -61,4 +61,27 @@ def arrayChange(inputArray):
     return movesCount
 
 def palindromeRearranging(inputString):
-    return False
+    lst1 = []
+    lst2 = []
+    i = 0
+    while i < len(inputString) :
+        j = i + 1
+        while j < len(inputString) :
+            if inputString[i] == inputString[j] :
+                lst1.append(inputString[i])
+                lst2.append(inputString[j])
+                inputString = inputString[0 : i : ] + inputString[i+1 : :]
+                inputString = inputString[i : j : ] + inputString[j+1 : :]
+                i = 0
+                break
+            j += 1
+        i += 1
+    if len(lst1) != len(lst2):
+        return False
+    else:
+        lst1.sort()
+        lst2.sort()
+        for k in range(0, len(lst1)):
+            if lst1[k] != lst2[k]:
+                return False
+    return True
