@@ -20,7 +20,7 @@ def sort_with_bubbles(lst):
                 lst[i + 1] = temp
 
                 # One more line is needed here; add it!
-                # swap_occured = True
+                swap_occurred = True
     return lst
 
 
