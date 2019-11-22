@@ -21,8 +21,9 @@ def permutationCipher(password, key):
 def competitiveEating(t, width, precision):
     return "{:^{width}.{prec}f}".format(str(round(t, precision)))
 
+import re
 def newStyleFormatting(s):
-    return str(s).replace("%", "{}")
+    return '%'.join(re.sub('%\w', '{}', part) for part in s.split('%%'))
 
 def getCommit(commit):
     return "".join([c for c in commit if c not in "0?+!"])
