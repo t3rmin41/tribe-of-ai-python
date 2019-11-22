@@ -1,4 +1,5 @@
 from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
+from tribe.ai.edx.SearchAlgorithms import linear
 
 # Below are some lines of code that will test your function.
 # You can change the value of the variable(s) to test your
@@ -22,3 +23,13 @@ print(mergesort([2, 5, 3, 8, 6, 9, 1, 4, 7]))
 #It works! To see more about how it works, check out
 #MergesortwithPrints.py. To get a succinct version of
 #this algorithm, checkout MergesortShort.py.
+
+
+#Below are some lines of code that will test your function.
+#You can change the value of the variable(s) to test your
+#function with different inputs.
+#
+#If your function works correctly, this will originally
+#print: 3
+a_list = [5, 1, 3, 6, 7, 3, 1, 6, 7, 8, 3, 6]
+print(linear(a_list, 6))
