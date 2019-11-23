@@ -138,6 +138,15 @@ s4 = "accababa"
 print("palindromeRearranging(", s4, ") : ", end = "")
 print(palindromeRearranging(s4))
 
+s5 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc"
+print("palindromeRearranging(", s5, ") : ", end = "")
+print(palindromeRearranging(s5))
+
+s6 = "abbcabb"
+print("palindromeRearranging(", s6, ") : ", end = "")
+print(palindromeRearranging(s6))
+
+
 yourLeft = 10
 yourRight = 15
 friendsLeft = 15

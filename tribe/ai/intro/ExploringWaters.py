@@ -65,18 +65,21 @@ def palindromeRearranging(inputString):
     lst2 = []
     i = 0
     while i < len(inputString) :
+        foundPair = False
         j = i + 1
         while j < len(inputString) :
             if inputString[i] == inputString[j] :
                 lst1.append(inputString[i])
                 lst2.append(inputString[j])
-                inputString = inputString[0 : i : ] + inputString[i+1 : :]
-                inputString = inputString[i : j : ] + inputString[j+1 : :]
-                i = 0
+                inputString = inputString[:i] + inputString[i+1:]
+                inputString = inputString[:j-1] + inputString[j:]
+                foundPair = True
                 break
             j += 1
-        i += 1
-    if len(lst1) != len(lst2):
+        if foundPair :
+            i = 0
+        else: i += 1
+    if len(lst1) != len(lst2) or len(inputString) > 1 :
         return False
     else:
         lst1.sort()
