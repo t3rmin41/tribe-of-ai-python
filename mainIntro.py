@@ -2,7 +2,7 @@ from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
-from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong
+from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address
 
 '''
 
@@ -154,3 +154,21 @@ friendsRight = 10
 
 print("areEquallyStrong(", yourLeft, ",", yourRight, ",", friendsLeft, ",", friendsRight, ") : ", end = "")
 print(areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight))
+
+ipv4_1 = "172.16.254.1"
+ipv4_2 = "172.316.254.1"
+ipv4_3 = ".254.255.0"
+ipv4_4 = "1.1.1.1a"
+
+#print("isIPv4Address(", ipv4_1, ") : ", end = "")
+#print(isIPv4Address(ipv4_1))
+
+#print("isIPv4Address(", ipv4_2, ") : ", end = "")
+#print(isIPv4Address(ipv4_2))
+
+
+print("isIPv4Address(", ipv4_3, ") : ", end = "")
+print(isIPv4Address(ipv4_3))
+
+print("isIPv4Address(", ipv4_4, ") : ", end = "")
+print(isIPv4Address(ipv4_4))
