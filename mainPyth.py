@@ -1,7 +1,7 @@
 from tribe.ai.pyth.MeetPyth import countBits, countBitsInLoop, modulus, simpleSort, baseConversion, mexFunction
 from tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk, convertTabs, \
     feedbackReview, isWordPalindrome, permutationCipher, competitiveEating, newStyleFormatting, getCommit
-from tribe.ai.pyth.LurkingInLists import listsConcatenation
+from tribe.ai.pyth.LurkingInLists import listsConcatenation, twoTeams, removeTasks
 
 '''
 n = 4
@@ -62,6 +62,21 @@ print("getCommit[", commit, "] :", getCommit(commit))
 
 '''
 
-lst1 = [2, 2, 1]
-lst2 = [10, 11]
-print("listsConcatenation(", lst1, ",", lst2, ") :", listsConcatenation(lst1, lst2))
+#lst1 = [2, 2, 1]
+#lst2 = [10, 11]
+#print("listsConcatenation(", lst1, ",", lst2, ") :", listsConcatenation(lst1, lst2))
+
+#students1 = [1, 11, 13, 6, 14]
+#print("twoTeams(", students1, ") :", twoTeams(students1))
+
+k = 3
+toDo = [1237, 2847, 27485, 2947, 1, 247, 374827, 22]
+
+print("removeTasks(", k, ",", toDo, ") :", removeTasks(k, toDo))
+
+ch = "*"
+n = 10
+
+repeatChar = lambda ch, n: ch * n
+
+print("repeatChar(", ch, ",", n, ") :", repeatChar(ch, n))

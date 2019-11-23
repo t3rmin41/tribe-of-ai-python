@@ -30,3 +30,6 @@ def isIPv4Address(inputString):
         if octet > 255 or octet < 0 :
             return False
     return True
+
+def avoidObstacles(inputArray):
+    inputArray.sort()
