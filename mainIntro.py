@@ -158,7 +158,7 @@ print(areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight))
 ipv4_1 = "172.16.254.1"
 ipv4_2 = "172.316.254.1"
 ipv4_3 = ".254.255.0"
-ipv4_4 = "1.1.1.1a"
+ipv4_4 = 100
 
 #print("isIPv4Address(", ipv4_1, ") : ", end = "")
 #print(isIPv4Address(ipv4_1))
