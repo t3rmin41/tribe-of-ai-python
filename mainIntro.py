@@ -2,7 +2,7 @@ from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
-from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address
+from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, boxBlur
 
 '''
 
@@ -135,16 +135,16 @@ print("arrayChange( arr4 ) : ", end = "")
 print(arrayChange(arr4))
 
 s4 = "accababa"
-print("palindromeRearranging(", s4, ") : ", end = "")
-print(palindromeRearranging(s4))
+#print("palindromeRearranging(", s4, ") : ", end = "")
+#print(palindromeRearranging(s4))
 
 s5 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc"
-print("palindromeRearranging(", s5, ") : ", end = "")
-print(palindromeRearranging(s5))
+#print("palindromeRearranging(", s5, ") : ", end = "")
+#print(palindromeRearranging(s5))
 
 s6 = "abbcabb"
-print("palindromeRearranging(", s6, ") : ", end = "")
-print(palindromeRearranging(s6))
+#print("palindromeRearranging(", s6, ") : ", end = "")
+#print(palindromeRearranging(s6))
 
 
 yourLeft = 10
@@ -152,8 +152,8 @@ yourRight = 15
 friendsLeft = 15
 friendsRight = 10
 
-print("areEquallyStrong(", yourLeft, ",", yourRight, ",", friendsLeft, ",", friendsRight, ") : ", end = "")
-print(areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight))
+#print("areEquallyStrong(", yourLeft, ",", yourRight, ",", friendsLeft, ",", friendsRight, ") : ", end = "")
+#print(areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight))
 
 ipv4_1 = "172.16.254.1"
 ipv4_2 = "172.316.254.1"
@@ -167,8 +167,27 @@ ipv4_4 = 100
 #print(isIPv4Address(ipv4_2))
 
 
-print("isIPv4Address(", ipv4_3, ") : ", end = "")
-print(isIPv4Address(ipv4_3))
+#print("isIPv4Address(", ipv4_3, ") : ", end = "")
+#print(isIPv4Address(ipv4_3))
 
-print("isIPv4Address(", ipv4_4, ") : ", end = "")
-print(isIPv4Address(ipv4_4))
+#print("isIPv4Address(", ipv4_4, ") : ", end = "")
+#print(isIPv4Address(ipv4_4))
+
+image1 = [[1, 2, 3],
+         [1, 7, 4],
+         [1, 3, 2]]
+#print("boxBlur(", image1, ") : ", end = "")
+#print(boxBlur(image1))
+
+image2 = [[1, 1, 1],
+         [1, 7, 1],
+         [1, 1, 1]]
+print("boxBlur(", image2, ") : ", end = "")
+print(boxBlur(image2))
+
+image3 = [[7, 4, 0, 1],
+         [5, 6, 2, 2],
+         [6, 10, 7, 8],
+         [1, 4, 2, 0]]
+print("boxBlur(", image3, ") : ", end = "")
+print(boxBlur(image3))
