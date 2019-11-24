@@ -36,19 +36,18 @@ def avoidObstacles(inputArray):
     return 0
 
 def boxBlur(image):
-    size_of_blur_x_side = 3
-    size_of_blur_y_side = 3
-    blurred_rows_num = (len(image) - size_of_blur_x_side) + 1
-    blurred_cols_num = (len(image[0]) - size_of_blur_y_side) + 1
+    square_side_size = 3
+    blurred_rows_num = (len(image) - square_side_size) + 1
+    blurred_cols_num = (len(image[0]) - square_side_size) + 1
     blurred = [[None] * blurred_cols_num] * blurred_rows_num
     n = 0
     m = 0
     while n < blurred_rows_num :
-        sum = 0
-        count = 0
         while m < blurred_cols_num :
-            for i in range(n, n+size_of_blur_x_side) :
-                for j in range(m, m+size_of_blur_y_side) :
+            sum = 0
+            count = 0
+            for i in range(n, n + square_side_size) :
+                for j in range(m, m + square_side_size) :
                     sum = sum + image[i][j]
                     count = count + 1
             blurred[n][m] = sum // count
