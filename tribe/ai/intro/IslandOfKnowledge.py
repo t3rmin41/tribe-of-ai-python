@@ -41,8 +41,8 @@ def boxBlur(image):
     blurred_cols_num = (len(image[0]) - square_side_size) + 1
     blurred = [[None] * blurred_cols_num] * blurred_rows_num
     n = 0
-    m = 0
     while n < blurred_rows_num :
+        m = 0
         while m < blurred_cols_num :
             sum = 0
             count = 0
@@ -50,9 +50,9 @@ def boxBlur(image):
                 for j in range(m, m + square_side_size) :
                     sum = sum + image[i][j]
                     count = count + 1
-            blurred[n][m] = sum // count
+            blurred[n[m]] = sum // count # how to assign value to n-th list m-th element?
             m = m + 1
-            n = n + 1
+        n = n + 1
     return blurred
 
 def minesweeper(matrix):
