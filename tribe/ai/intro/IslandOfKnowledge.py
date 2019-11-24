@@ -48,7 +48,7 @@ def boxBlur(image):
             count = 0
             for i in range(n, n + square_side_size) :
                 for j in range(m, m + square_side_size) :
-                    sum = sum + image[i][j]
+                    sum = sum + image[i][j] # getting matrix's element at i row at j column is OK
                     count = count + 1
             blurred[n[m]] = sum // count # how to assign value to n-th list m-th element?
             m = m + 1
