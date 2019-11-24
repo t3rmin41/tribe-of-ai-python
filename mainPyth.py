@@ -1,6 +1,6 @@
 from tribe.ai.pyth.MeetPyth import countBits, countBitsInLoop, modulus, simpleSort, baseConversion, mexFunction
 from tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk, convertTabs, \
-    feedbackReview, isWordPalindrome, permutationCipher, competitiveEating, newStyleFormatting, getCommit
+    feedbackReview, isWordPalindrome, permutationCipher, competitiveEating, newStyleFormatting, getCommit, getNumericsFromString
 from tribe.ai.pyth.LurkingInLists import listsConcatenation, twoTeams, removeTasks
 
 '''
@@ -72,11 +72,19 @@ print("getCommit[", commit, "] :", getCommit(commit))
 k = 3
 toDo = [1237, 2847, 27485, 2947, 1, 247, 374827, 22]
 
-print("removeTasks(", k, ",", toDo, ") :", removeTasks(k, toDo))
+#print("removeTasks(", k, ",", toDo, ") :", removeTasks(k, toDo))
 
 ch = "*"
 n = 10
 
 repeatChar = lambda ch, n: ch * n
 
-print("repeatChar(", ch, ",", n, ") :", repeatChar(ch, n))
+#print("repeatChar(", ch, ",", n, ") :", repeatChar(ch, n))
+
+str1 = "There are over 100'000.00 USD in cash and also 200'000 $ in the account"
+str2 = "There are over 100 000,00 EUR in cash but only 100,00 in the account"
+
+amount1 = getNumericsFromString(str1)
+print("amount1 :", amount1)
+amount2 = getNumericsFromString(str2)
+print("amount2 :", amount2)

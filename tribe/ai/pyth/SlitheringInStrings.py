@@ -28,4 +28,6 @@ def newStyleFormatting(s):
 def getCommit(commit):
     return "".join([c for c in commit if c not in "0?+!"])
 
-
+def getNumericsFromString(s):
+    pattern = r"\d+['\s]?\d+[,.]?\d+"
+    return re.findall(pattern, s)
