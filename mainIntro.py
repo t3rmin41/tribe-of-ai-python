@@ -182,8 +182,8 @@ image1 = [[1, 2, 3],
 image2 = [[1, 1, 1],
          [1, 7, 1],
          [1, 1, 1]]
-print("boxBlur(", image2, ") : ", end = "")
-print(boxBlur(image2))
+#print("boxBlur(", image2, ") : ", end = "")
+#print(boxBlur(image2))
 
 image3 = [[7, 4, 0, 1],
          [5, 6, 2, 2],

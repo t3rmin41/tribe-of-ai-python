@@ -44,11 +44,11 @@ def boxBlur(image):
     n = 0
     m = 0
     while n < blurred_rows_num :
+        sum = 0
+        count = 0
         while m < blurred_cols_num :
-            sum = 0
-            count = 0
-            for i in range(n, n+3) :
-                for j in range(m, m+3) :
+            for i in range(n, n+size_of_blur_x_side) :
+                for j in range(m, m+size_of_blur_y_side) :
                     sum = sum + image[i][j]
                     count = count + 1
             blurred[n][m] = sum // count
