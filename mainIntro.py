@@ -2,7 +2,7 @@ from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
-from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, boxBlur
+from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, boxBlur, minesweeper
 
 '''
 
@@ -182,12 +182,18 @@ image1 = [[1, 2, 3],
 image2 = [[1, 1, 1],
          [1, 7, 1],
          [1, 1, 1]]
-print("boxBlur(", image2, ") : ", end = "")
-print(boxBlur(image2))
+#print("boxBlur(", image2, ") : ", end = "")
+#print(boxBlur(image2))
 
 image3 = [[7, 4, 0, 1],
          [5, 6, 2, 2],
          [6, 10, 7, 8],
          [1, 4, 2, 0]]
-print("boxBlur(", image3, ") : ", end = "")
-print(boxBlur(image3))
+#print("boxBlur(", image3, ") : ", end = "")
+#print(boxBlur(image3))
+
+matrix1 = [[True, False, False],
+          [False, True, False],
+          [False, False, False]]
+print("minesweeper(", matrix1, ") : ", end = "")
+print(minesweeper(matrix1))
