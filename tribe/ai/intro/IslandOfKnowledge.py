@@ -62,13 +62,21 @@ def minesweeper(matrix):
     for i in range(0, len(minesweeped_matrix)):
         for j in range(0, len(minesweeped_matrix[i])) :
             neighboring_cell = 0
-            if i > 0 and j > 0 and i < len(minesweeped_matrix) and j < len(minesweeped_matrix[i]) : # the cell has all 8 neighbors, angle neighbors are also counted
-                if matrix[i][j-1] :
-                    neighboring_cell += 1
-                if matrix[i][j+1] :
-                    neighboring_cell += 1
-                if matrix[i-1][j] :
-                    neighboring_cell += 1
-                if matrix[i+1][j] :
-                    neighboring_cell += 1
+            for n in range(-1, 1) :
+                for m in range(-1, 1) :
+                    try:
+                        if matrix[i+n][j+m] :
+                            neighboring_cell = neighboring_cell + 1
+                            minesweeped_matrix[i][j] = neighboring_cell
+                    except:
+                        continue
+            #if i > 0 and j > 0 and i < len(minesweeped_matrix) and j < len(minesweeped_matrix[i]) : # the cell has all 8 neighbors, angle neighbors are also counted
+            #    if matrix[i][j-1] :
+            #        neighboring_cell += 1
+            #    if matrix[i][j+1] :
+            #        neighboring_cell += 1
+            #    if matrix[i-1][j] :
+            #        neighboring_cell += 1
+            #    if matrix[i+1][j] :
+            #        neighboring_cell += 1
     return minesweeped_matrix
