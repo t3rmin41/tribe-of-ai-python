@@ -61,22 +61,36 @@ def minesweeper(matrix):
     minesweeped_matrix = [[None for i in range(0, len(matrix[0]))] for j in range(0, len(matrix))]
     for i in range(0, len(minesweeped_matrix)):
         for j in range(0, len(minesweeped_matrix[i])) :
-            neighboring_cell = 0
+#            neighboring_cell_mark = 0
+#            try :
+#                if i-1 >=0 and j-1 >= 0 and matrix[i-1][j-1]:
+#                    neighboring_cell_mark += 1
+#                if i-1 >=0 and j >= 0 and matrix[i-1][j]:
+#                    neighboring_cell_mark += 1
+#                if i-1 >=0 and j+1 >= 0 and matrix[i-1][j+1]:
+#                    neighboring_cell_mark += 1
+#                if i >= 0 and j-1 >= 0 and matrix[i][j-1] :
+#                    neighboring_cell_mark += 1
+#                if i >= 0 and j+1 >= 0 and matrix[i][j+1]:
+#                   neighboring_cell_mark += 1
+#                if i+1 >= 0 and j-1 >= 0 and matrix[i+1][j-1]:
+#                    neighboring_cell_mark += 1
+#                if i+1 >= 0 and j >= 0 and matrix[i+1][j]:
+#                    neighboring_cell_mark += 1
+#                if i+1 >= 0 and j+11 >= 0 and matrix[i+1][j+1]:
+#                    neighboring_cell_mark += 1
+#                minesweeped_matrix[i][j] = neighboring_cell_mark
+#            except:
+#                continue
+
             for n in range(-1, 1) :
                 for m in range(-1, 1) :
+                    neighboring_cell_mark = 0
                     try:
-                        if matrix[i+n][j+m] :
-                            neighboring_cell = neighboring_cell + 1
-                            minesweeped_matrix[i][j] = neighboring_cell
+                        if i != 0 and j != 0 and i+n >=0 and j+m >=0 :
+                            if matrix[i+n][j+m]:
+                                neighboring_cell_mark = neighboring_cell_mark + 1
                     except:
                         continue
-            #if i > 0 and j > 0 and i < len(minesweeped_matrix) and j < len(minesweeped_matrix[i]) : # the cell has all 8 neighbors, angle neighbors are also counted
-            #    if matrix[i][j-1] :
-            #        neighboring_cell += 1
-            #    if matrix[i][j+1] :
-            #        neighboring_cell += 1
-            #    if matrix[i-1][j] :
-            #        neighboring_cell += 1
-            #    if matrix[i+1][j] :
-            #        neighboring_cell += 1
+                    minesweeped_matrix[i][j] = neighboring_cell_mark
     return minesweeped_matrix
