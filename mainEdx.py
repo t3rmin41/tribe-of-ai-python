@@ -40,12 +40,18 @@ a_list = [5, 1, 3, 7, 3, 1, 7, 8, 3, 6]
 
 some_number = 17
 
-print("fibonacci(", some_number, ") : ", end = "")
-print(fibonacci(some_number))
+#print("fibonacci(", some_number, ") : ", end = "")
+#print(fibonacci(some_number))
 
-print("collatz(", some_number, ") : ", end = "")
-print(collatz(some_number))
+#print("collatz(", some_number, ") : ", end = "")
+#print(collatz(some_number))
 
-print("collatz2(", some_number, ") : ", end = "")
-print(collatz2(some_number))
+#print("collatz2(", some_number, ") : ", end = "")
+#print(collatz2(some_number))
+
+test_name = Name("David", "Joyner")
+#print(test_name.first_name)
+#print(test_name.last_name)
+print(test_name.find_printed_name()) # prints "None" on the last line for some reason
+#print(test_name.find_sortable_name())
 
