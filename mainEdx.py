@@ -52,6 +52,9 @@ some_number = 17
 test_name = Name("David", "Joyner")
 #print(test_name.first_name)
 #print(test_name.last_name)
-print(test_name.find_printed_name()) # prints "None" on the last line for some reason
+#print(test_name.find_printed_name()) # prints "None" on the last line for some reason
 #print(test_name.find_sortable_name())
 
+print(joynernacci(3))
+print(joynernacci(5))
+print(joynernacci(12))

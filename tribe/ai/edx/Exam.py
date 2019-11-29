@@ -30,3 +30,11 @@ class Name:
         return self.first_name+" "+self.last_name
     def find_sortable_name(self):
         return self.last_name + ", " + self.first_name[0]
+
+def joynernacci(index):
+    if index <= 2 :
+        return 1
+    if index % 2 == 0 :
+        return joynernacci(index - 1) + joynernacci(index - 2)
+    if index % 2 == 1 :
+        return abs(joynernacci(index - 1) - joynernacci(index -2))
