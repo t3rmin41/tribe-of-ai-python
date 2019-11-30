@@ -61,31 +61,10 @@ def minesweeper(matrix):
     minesweeped_matrix = [[None for i in range(0, len(matrix[0]))] for j in range(0, len(matrix))]
     for i in range(0, len(minesweeped_matrix)):
         for j in range(0, len(minesweeped_matrix[i])) :
-#            neighboring_cell_mark = 0
-#            try :
-#                if i-1 >=0 and j-1 >= 0 and matrix[i-1][j-1]:
-#                    neighboring_cell_mark += 1
-#                if i-1 >=0 and j >= 0 and matrix[i-1][j]:
-#                    neighboring_cell_mark += 1
-#                if i-1 >=0 and j+1 >= 0 and matrix[i-1][j+1]:
-#                    neighboring_cell_mark += 1
-#                if i >= 0 and j-1 >= 0 and matrix[i][j-1] :
-#                    neighboring_cell_mark += 1
-#                if i >= 0 and j+1 >= 0 and matrix[i][j+1]:
-#                   neighboring_cell_mark += 1
-#                if i+1 >= 0 and j-1 >= 0 and matrix[i+1][j-1]:
-#                    neighboring_cell_mark += 1
-#                if i+1 >= 0 and j >= 0 and matrix[i+1][j]:
-#                    neighboring_cell_mark += 1
-#                if i+1 >= 0 and j+11 >= 0 and matrix[i+1][j+1]:
-#                    neighboring_cell_mark += 1
-#                minesweeped_matrix[i][j] = neighboring_cell_mark
-#            except:
-#                continue
             neighboring_cell_mark = 0
             for n in range(-1, 2) :
                 for m in range(-1, 2) :
-                    if i+n >=0 and j+m >=0 and i+n != i and i+m != j :
+                     if i+n >=0 and j+m >=0 and (i+n != i or j+m != j) :
                         try:
                             if matrix[i+n][j+m]:
                                 neighboring_cell_mark = neighboring_cell_mark + 1
