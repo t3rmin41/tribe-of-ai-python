@@ -88,3 +88,6 @@ amount1 = getNumericsFromString(str1)
 print("amount1 :", amount1)
 amount2 = getNumericsFromString(str2)
 print("amount2 :", amount2)
+
+#generator comprehension, enumerate  - for TwoTeams task
+#for RemoveTasks - del
