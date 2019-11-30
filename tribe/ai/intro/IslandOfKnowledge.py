@@ -68,7 +68,10 @@ def minesweeper(matrix):
                         try:
                             if matrix[i+n][j+m]:
                                 neighboring_cells_mark = neighboring_cells_mark + 1
-                        except IndexError:
+                        except IndexError as indexError:
                             continue
+                        except ImportError as importError:
+                            print("Error:", importError)
+                            raise RuntimeError
             minesweeped_matrix[i][j] = neighboring_cells_mark
     return minesweeped_matrix
