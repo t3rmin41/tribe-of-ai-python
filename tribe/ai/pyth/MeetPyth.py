@@ -23,7 +23,7 @@ def simpleSort(arr):
         stop = n - i
         while j < stop - 1:
             if arr[j] > arr[j + 1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+                arr[j], arr[j+1] = arr[j+1], arr[j] # it's tuple because tuples are  identified by commas, basically parenthesis are not needed
             j += 1
     return arr
 
