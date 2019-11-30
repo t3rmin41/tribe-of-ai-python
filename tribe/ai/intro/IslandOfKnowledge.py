@@ -61,14 +61,14 @@ def minesweeper(matrix):
     minesweeped_matrix = [[None for i in range(0, len(matrix[0]))] for j in range(0, len(matrix))]
     for i in range(0, len(minesweeped_matrix)):
         for j in range(0, len(minesweeped_matrix[i])) :
-            neighboring_cell_mark = 0
-            for n in range(-1, 2) :
-                for m in range(-1, 2) :
+            neighboring_cells_mark = 0
+            for n in range(-1, 2) : # the range includes -1, 0, 1 but doesn't include 2
+                for m in [-1, 0, 1] : # explicit range declaration and it's the same range as range(-1, 2)
                      if i+n >=0 and j+m >=0 and (i+n != i or j+m != j) :
                         try:
                             if matrix[i+n][j+m]:
-                                neighboring_cell_mark = neighboring_cell_mark + 1
-                        except:
+                                neighboring_cells_mark = neighboring_cells_mark + 1
+                        except IndexError:
                             continue
-            minesweeped_matrix[i][j] = neighboring_cell_mark
+            minesweeped_matrix[i][j] = neighboring_cells_mark
     return minesweeped_matrix
