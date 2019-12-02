@@ -5,7 +5,7 @@ def listsConcatenation(lst1, lst2):
     return res
 
 def twoTeams(students):
-    return students
+    return sum([students[i] for i in range(0, len(students)) if i % 2 == 0]) - sum([students[i] for i in range(0, len(students)) if i % 2 == 1])
 
 def removeTasks(k, toDo):
 #    del toDo[{for k in range(0, len(toDo)) : k += k }:]

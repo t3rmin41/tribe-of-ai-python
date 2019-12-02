@@ -66,8 +66,8 @@ print("getCommit[", commit, "] :", getCommit(commit))
 #lst2 = [10, 11]
 #print("listsConcatenation(", lst1, ",", lst2, ") :", listsConcatenation(lst1, lst2))
 
-#students1 = [1, 11, 13, 6, 14]
-#print("twoTeams(", students1, ") :", twoTeams(students1))
+students1 = [1, 11, 13, 6, 14]
+print("twoTeams(", students1, ") :", twoTeams(students1))
 
 k = 3
 toDo = [1237, 2847, 27485, 2947, 1, 247, 374827, 22]
@@ -85,9 +85,9 @@ str1 = "There are over 100'000.00 USD in cash and also 200'000 $ in the account"
 str2 = "There are over 100 000,00 EUR in cash but only 100,00 in the account"
 
 amount1 = getNumericsFromString(str1)
-print("amount1 :", amount1)
+#print("amount1 :", amount1)
 amount2 = getNumericsFromString(str2)
-print("amount2 :", amount2)
+#print("amount2 :", amount2)
 
 #generator comprehension, enumerate  - for TwoTeams task
 #for RemoveTasks - del
