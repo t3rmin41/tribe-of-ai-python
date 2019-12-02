@@ -8,5 +8,5 @@ def twoTeams(students):
     return sum([students[i] for i in range(0, len(students)) if i % 2 == 0]) - sum([students[i] for i in range(0, len(students)) if i % 2 == 1])
 
 def removeTasks(k, toDo):
-#    del toDo[{for k in range(0, len(toDo)) : k += k }:]
+    del toDo[k-1::k]
     return toDo

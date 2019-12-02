@@ -66,13 +66,13 @@ print("getCommit[", commit, "] :", getCommit(commit))
 #lst2 = [10, 11]
 #print("listsConcatenation(", lst1, ",", lst2, ") :", listsConcatenation(lst1, lst2))
 
-students1 = [1, 11, 13, 6, 14]
-print("twoTeams(", students1, ") :", twoTeams(students1))
+#students1 = [1, 11, 13, 6, 14]
+#print("twoTeams(", students1, ") :", twoTeams(students1))
 
 k = 3
 toDo = [1237, 2847, 27485, 2947, 1, 247, 374827, 22]
-
-#print("removeTasks(", k, ",", toDo, ") :", removeTasks(k, toDo))
+print("removeTasks(", k, ",", toDo, ") :", end="")
+print(removeTasks(k, toDo))
 
 ch = "*"
 n = 10
