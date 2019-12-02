@@ -2,7 +2,7 @@ from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
-from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, boxBlur, minesweeper
+from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, avoidObstacles, boxBlur, minesweeper
 
 '''
 
@@ -173,6 +173,13 @@ ipv4_4 = 100
 #print("isIPv4Address(", ipv4_4, ") : ", end = "")
 #print(isIPv4Address(ipv4_4))
 
+inputArray1 = [5, 3, 6, 7, 9]
+inputArray2 = [1, 4, 10, 6, 2]
+#print("avoidObstacles(", inputArray1, ") : ", end = "")
+#print(avoidObstacles(inputArray1))
+print("avoidObstacles(", inputArray2, ") : ", end = "")
+print(avoidObstacles(inputArray2))
+
 image1 = [[1, 2, 3],
          [1, 7, 4],
          [1, 3, 2]]
@@ -195,5 +202,5 @@ image3 = [[7, 4, 0, 1],
 matrix1 = [[True, False, False],
           [False, True, False],
           [False, False, False]]
-print("minesweeper(", matrix1, ") : ", end = "")
-print(minesweeper(matrix1))
+#print("minesweeper(", matrix1, ") : ", end = "")
+#print(minesweeper(matrix1))

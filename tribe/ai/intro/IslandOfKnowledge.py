@@ -33,7 +33,14 @@ def isIPv4Address(inputString : str) -> bool : # optional typing, return type - 
 
 def avoidObstacles(inputArray):
     inputArray.sort()
-    return 0
+    min_length = inputArray[0] + 1
+    i = 0
+    while i < len(inputArray) : # need 2 nested loops - one index from start, the other - to the rest of the list, if violated - start from the beginning
+        if inputArray[i] + 1 == min_length :
+            min_length += 1
+            i = -1
+        i += 1
+    return min_length - 1
 
 def boxBlur(image):
     square_side_size = 3
