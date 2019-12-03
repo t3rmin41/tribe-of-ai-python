@@ -16,7 +16,7 @@ def arrayMaximalAdjacentDifference(inputArray):
             maxDiff = abs(inputArray[i] - inputArray[i+1])
     return maxDiff
 
-def isIPv4Address(inputString : str) -> bool : # optional typing, return type - boolean but still execution continues if type doesn't match
+def isIPv4Address(inputString: str) -> bool: # optional typing, return type - boolean but still execution continues if parameter type doesn't match
     str_octets = str(inputString).split(".")
     int_octets = []
     for s_octet in str_octets :

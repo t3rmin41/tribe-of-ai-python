@@ -2,6 +2,7 @@ from tribe.ai.pyth.MeetPyth import countBits, countBitsInLoop, modulus, simpleSo
 from tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk, convertTabs, \
     feedbackReview, isWordPalindrome, permutationCipher, competitiveEating, newStyleFormatting, getCommit, getNumericsFromString
 from tribe.ai.pyth.LurkingInLists import listsConcatenation, twoTeams, removeTasks
+from tribe.ai.pyth.LambdaIllusions import getPoints
 
 '''
 n = 4
@@ -71,8 +72,8 @@ print("getCommit[", commit, "] :", getCommit(commit))
 
 k = 3
 toDo = [1237, 2847, 27485, 2947, 1, 247, 374827, 22]
-print("removeTasks(", k, ",", toDo, ") :", end="")
-print(removeTasks(k, toDo))
+#print("removeTasks(", k, ",", toDo, ") :", end="")
+#print(removeTasks(k, toDo))
 
 ch = "*"
 n = 10
@@ -91,3 +92,7 @@ amount2 = getNumericsFromString(str2)
 
 #generator comprehension, enumerate  - for TwoTeams task
 #for RemoveTasks - del
+
+answers1 = [True, True, False, True]; p = 2
+print("getPoints(", answers1, ",", p, ") : ", end="")
+print(getPoints(answers1, p))
