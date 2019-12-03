@@ -5,6 +5,8 @@ from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, 
 from tribe.ai.edx.SearchAlgorithms import linear
 from tribe.ai.edx.Exam import *
 
+from tribe.ai.edx.ExamClasses import Name
+
 # Below are some lines of code that will test your function.
 # You can change the value of the variable(s) to test your
 # function with different inputs.
