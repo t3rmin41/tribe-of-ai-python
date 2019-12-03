@@ -34,13 +34,18 @@ def isIPv4Address(inputString : str) -> bool : # optional typing, return type - 
 def avoidObstacles(inputArray):
     inputArray.sort()
     min_length = inputArray[0] + 1
+    next_step = inputArray[0] + 1
     i = 0
+    #rethink algorithm to take 1 as first value, if failed - 2, if failed - 3 and so on
     while i < len(inputArray) : # need 2 nested loops - one index from start, the other - to the rest of the list, if violated - start from the beginning
-        if inputArray[i] + 1 == min_length :
-            min_length += 1
+        if inputArray[i] == next_step or inputArray[i] == min_length :
+            min_length = inputArray[i] + 1
             i = -1
+        if i == 0 :
+            next_step = min_length * 2
         i += 1
-    return min_length - 1
+    # when min_length found - find its least common multiple? divided by greatest common divisor?
+    return min_length
 
 def boxBlur(image):
     square_side_size = 3
