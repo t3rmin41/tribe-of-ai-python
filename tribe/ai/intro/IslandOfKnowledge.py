@@ -65,6 +65,18 @@ def avoidObstacles(inputArray):
             current_step = free_coords[0]
     return min_step
 
+def avoidObstacles2(inputArray):
+    current_step = 0
+    min_step = 2  # no point of taking 1 - if we have minimal step as 1, we'll always hit obstacle eventually
+    while current_step < inputArray[-1]:
+        current_step = current_step + min_step
+        for j in range(0, len(inputArray)) :
+            if inputArray[j] % min_step == 0 :
+                min_step += 1
+                current_step = 0
+                break
+    return min_step
+
 def boxBlur(image):
     square_side_size = 3
     blurred_rows_num = (len(image) - square_side_size) + 1

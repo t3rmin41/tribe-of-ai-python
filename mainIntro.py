@@ -2,7 +2,7 @@ from tribe.ai.intro.JourneyBegins import *
 from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeArrayConsecutive2, almostIncreasingSequence, matrixElementsSum
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
-from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, avoidObstacles, boxBlur, minesweeper
+from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, avoidObstacles, avoidObstacles2, boxBlur, minesweeper
 
 '''
 
@@ -185,12 +185,12 @@ inputArray6 = [10, 12]
 #print(avoidObstacles(inputArray2))
 #print("avoidObstacles(", inputArray3, ") : ", end = "")
 #print(avoidObstacles(inputArray3))
-print("avoidObstacles(", inputArray4, ") : ", end = "")
-print(avoidObstacles(inputArray4))
+print("avoidObstacles2(", inputArray4, ") : ", end = "")
+print(avoidObstacles2(inputArray4))
 #print("avoidObstacles(", inputArray5, ") : ", end = "")
 #print(avoidObstacles(inputArray5))
-print("avoidObstacles(", inputArray6, ") : ", end = "")
-print(avoidObstacles(inputArray6))
+print("avoidObstacles2(", inputArray6, ") : ", end = "")
+print(avoidObstacles2(inputArray6))
 
 image1 = [[1, 2, 3],
          [1, 7, 4],
