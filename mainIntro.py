@@ -3,6 +3,7 @@ from tribe.ai.intro.EdgeOfOcean import adjacentElementsProduct, shapeArea, makeA
 from tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
 from tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, avoidObstacles, boxBlur, minesweeper
+from tribe.ai.intro.RainsOfReason import evenDigitsOnly
 
 '''
 
@@ -178,15 +179,15 @@ inputArray2 = [1, 4, 10, 6, 2]
 inputArray3 = [5, 8, 3, 6, 7, 9]
 inputArray4 = [1000, 999]
 inputArray5 = [19, 32, 11, 23]
-print("avoidObstacles(", inputArray1, ") : ", end = "")
+#print("avoidObstacles(", inputArray1, ") : ", end = "")
 #print(avoidObstacles(inputArray1))
-print("avoidObstacles(", inputArray2, ") : ", end = "")
+#print("avoidObstacles(", inputArray2, ") : ", end = "")
 #print(avoidObstacles(inputArray2))
-print("avoidObstacles(", inputArray3, ") : ", end = "")
+#print("avoidObstacles(", inputArray3, ") : ", end = "")
 #print(avoidObstacles(inputArray3))
-print("avoidObstacles(", inputArray4, ") : ", end = "")
-print(avoidObstacles(inputArray4))
-print("avoidObstacles(", inputArray5, ") : ", end = "")
+#print("avoidObstacles(", inputArray4, ") : ", end = "")
+#print(avoidObstacles(inputArray4))
+#print("avoidObstacles(", inputArray5, ") : ", end = "")
 #print(avoidObstacles(inputArray5))
 
 image1 = [[1, 2, 3],
@@ -213,3 +214,16 @@ matrix1 = [[True, False, False],
           [False, False, False]]
 #print("minesweeper(", matrix1, ") : ", end = "")
 #print(minesweeper(matrix1))
+
+#n1 = 642386
+#print("evenDigitsOnly(", n1, ") : ", end = "")
+#print(evenDigitsOnly(n1))
+#n2 = 1
+#print("evenDigitsOnly(", n2, ") : ", end = "")
+#print(evenDigitsOnly(n2))
+n3 = 10000
+print("evenDigitsOnly(", n3, ") : ", end = "")
+print(evenDigitsOnly(n3))
+#n4 = 0
+#print("evenDigitsOnly(", n4, ") : ", end = "")
+#print(evenDigitsOnly(n4))
