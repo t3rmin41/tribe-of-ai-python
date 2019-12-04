@@ -129,10 +129,10 @@ arr4 = [22121, 42080, -51776, -28528, 39895, -50842, 25463, 46187, -29518, 42293
 #print(arrayChange(arr1))
 #print("arrayChange(", arr2, ") : ", end = "")
 #print(arrayChange(arr2))
-print("arrayChange(", arr3, ") : ", end = "")
-print(arrayChange(arr3))
-print("arrayChange( arr4 ) : ", end = "")
-print(arrayChange(arr4))
+#print("arrayChange(", arr3, ") : ", end = "")
+#print(arrayChange(arr3))
+#print("arrayChange( arr4 ) : ", end = "")
+#print(arrayChange(arr4))
 
 s4 = "accababa"
 #print("palindromeRearranging(", s4, ") : ", end = "")
@@ -178,16 +178,19 @@ inputArray2 = [1, 4, 10, 6, 2]
 inputArray3 = [5, 8, 3, 6, 7, 9]
 inputArray4 = [1000, 999]
 inputArray5 = [19, 32, 11, 23]
-print("avoidObstacles(", inputArray1, ") : ", end = "")
+inputArray6 = [10, 12]
+#print("avoidObstacles(", inputArray1, ") : ", end = "")
 #print(avoidObstacles(inputArray1))
-print("avoidObstacles(", inputArray2, ") : ", end = "")
+#print("avoidObstacles(", inputArray2, ") : ", end = "")
 #print(avoidObstacles(inputArray2))
-print("avoidObstacles(", inputArray3, ") : ", end = "")
+#print("avoidObstacles(", inputArray3, ") : ", end = "")
 #print(avoidObstacles(inputArray3))
 print("avoidObstacles(", inputArray4, ") : ", end = "")
 print(avoidObstacles(inputArray4))
-print("avoidObstacles(", inputArray5, ") : ", end = "")
+#print("avoidObstacles(", inputArray5, ") : ", end = "")
 #print(avoidObstacles(inputArray5))
+print("avoidObstacles(", inputArray6, ") : ", end = "")
+print(avoidObstacles(inputArray6))
 
 image1 = [[1, 2, 3],
          [1, 7, 4],

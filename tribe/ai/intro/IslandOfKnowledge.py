@@ -33,19 +33,42 @@ def isIPv4Address(inputString: str) -> bool: # optional typing, return type - bo
 
 def avoidObstacles(inputArray):
     inputArray.sort()
-    min_length = inputArray[0] + 1
-    next_step = inputArray[0] + 1
+    free_coords = []
     i = 0
-    #rethink algorithm to take 1 as first value, if failed - 2, if failed - 3 and so on
-    while i < len(inputArray) : # need 2 nested loops - one index from start, the other - to the rest of the list, if violated - start from the beginning
-        if inputArray[i] == next_step or inputArray[i] == min_length :
-            min_length = inputArray[i] + 1
-            i = -1
-        if i == 0 :
-            next_step = min_length * 2
+    free_coords.append(inputArray[i] - 1)
+    max_distance_between_obstacles = (inputArray[-1] + 1) - (inputArray[0] - 1)
+    while i < len(inputArray) - 1 :
+        n = 0
+        while inputArray[i+1] != inputArray[i] + n :
+            if n != 0 :
+                free_coords.append(inputArray[i] + n)
+            n += 1
         i += 1
-    # when min_length found - find its least common multiple? divided by greatest common divisor?
-    return min_length
+    free_coords.append(inputArray[i] + 1)
+    i = 0
+    while i != free_coords[0] : # fill in free coords till the first obstacle
+        free_coords.append(i)
+        i += 1
+    free_coords.sort()
+
+    while i < max_distance_between_obstacles : # fill in free_coords with max_distance at the end
+        if free_coords[-1] + 1 not in free_coords :
+            free_coords.append(free_coords[-1] + 1)
+        i += 1
+    current_step = free_coords[0]
+    min_step = 2 #no point of taking 1 - if we have minimal step as 1, we'll always hit obstacle
+    while current_step < inputArray[-1] :
+        current_step = current_step + min_step
+        if current_step in free_coords :
+            for j in range(0, len(inputArray)) :
+                if inputArray[j] % min_step == 0 :
+                    min_step += 1
+                    current_step = free_coords[0]
+            continue
+        elif current_step <= inputArray[-1] :
+            min_step += 1
+            current_step = free_coords[0]
+    return min_step
 
 def boxBlur(image):
     square_side_size = 3
