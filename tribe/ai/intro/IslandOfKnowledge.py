@@ -50,11 +50,6 @@ def avoidObstacles(inputArray):
         i += 1
     free_coords.sort()
 
-    #while i < max_distance_between_obstacles : # fill in free_coords with max_distance at the end
-    #    if free_coords[-1] + 1 not in free_coords :
-    #        free_coords.append(free_coords[-1] + 1)
-    #    i += 1
-
     current_step = free_coords[0]
     min_step = 2 #no point of taking 1 - if we have minimal step as 1, we'll always hit obstacle eventually
     while current_step < inputArray[-1] :
