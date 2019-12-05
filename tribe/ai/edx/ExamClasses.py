@@ -7,7 +7,6 @@ class Name:
     def find_sortable_name(self):
         return self.last_name + ", " + self.first_name[0]
 
-from datetime import datetime
 class Meeting:
     def __init__(self, start_time, end_time):
         self.start_time = start_time

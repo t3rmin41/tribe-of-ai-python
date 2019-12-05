@@ -66,6 +66,9 @@ test_name = Name("David", "Joyner")
 meetings = [Meeting(datetime(2018, 8, 1, 9, 0, 0), datetime(2018, 8, 1, 11, 0, 0)),
             Meeting(datetime(2018, 8, 1, 15, 0, 0), datetime(2018, 8, 1, 16, 0, 0)),
             Meeting(datetime(2018, 8, 2, 9, 0, 0), datetime(2018, 8, 2, 10, 0, 0))]
-print(check_availability(meetings, datetime(2018, 8, 1, 12, 0, 0)))
-print(check_availability(meetings, datetime(2018, 8, 1, 10, 0, 0)))
+#print(check_availability(meetings, datetime(2018, 8, 1, 12, 0, 0)))
+#print(check_availability(meetings, datetime(2018, 8, 1, 10, 0, 0)))
 
+print(check_horse_winner(("HOR", "HORS", "H", "HO")))
+print(check_horse_winner(("HORSE", "HOR", "HORS", "HORSE")))
+print(check_horse_winner(("HORSE", "HORSE", "HORS", "HORSE")))
