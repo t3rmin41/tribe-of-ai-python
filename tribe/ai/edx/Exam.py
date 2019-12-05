@@ -85,3 +85,11 @@ def alter_list2(str_list, int_list): # doesn't work with enumerate() as it creat
         elif i in int_list and word.isupper() :
             word = word.lower()
     return str_list
+
+def rabbit_hole(d: dict, key):
+    value_tuple = (key, d.get(key))
+    while value_tuple[1] != None :
+        if d.get(value_tuple[1]) == key :
+            return False
+        value_tuple = (value_tuple[1], d.get(value_tuple[1]))
+    return value_tuple[0]

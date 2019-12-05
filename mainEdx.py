@@ -78,8 +78,20 @@ meetings = [Meeting(datetime(2018, 8, 1, 9, 0, 0), datetime(2018, 8, 1, 11, 0, 0
 #print(are_anagrams("Eleven plus two", "Twelve plus one"))
 #print(are_anagrams("Nine minus seven", "Five minus three"))
 
-print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
-print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+#print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+#print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
 
 #print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
 #print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+
+d = {"bat": "pig", "pig": "cat", "cat": "dog", "dog": "ant",
+     "cow": "bee", "bee": "elk", "elk": "fly", "ewe": "cod",
+     "cod": "hen", "hog": "fox", "fox": "jay", "jay": "doe",
+     "rat": "ram", "ram": "rat"}
+
+print(rabbit_hole(d, "bat"))
+print(rabbit_hole(d, "ewe"))
+print(rabbit_hole(d, "jay"))
+print(rabbit_hole(d, "yak"))
+print(rabbit_hole(d, "rat"))
+print(rabbit_hole(d, "bla"))
