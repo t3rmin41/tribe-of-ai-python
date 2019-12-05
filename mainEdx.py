@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
 # rule of thumb for big O notation : the number of nested loops (nested!) on the same list is power of n
 # e.g. O(n^2) - there are 2 nested loops, O(n) [linear] - one nested loop. Or there can be several loops on the same list
@@ -5,7 +7,7 @@ from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, 
 from tribe.ai.edx.SearchAlgorithms import linear
 from tribe.ai.edx.Exam import *
 
-from tribe.ai.edx.ExamClasses import Name
+from tribe.ai.edx.ExamClasses import Name, Meeting
 
 # Below are some lines of code that will test your function.
 # You can change the value of the variable(s) to test your
@@ -57,6 +59,13 @@ test_name = Name("David", "Joyner")
 #print(test_name.find_printed_name()) # prints "None" on the last line for some reason
 #print(test_name.find_sortable_name())
 
-print(joynernacci(3))
-print(joynernacci(5))
-print(joynernacci(12))
+#print(joynernacci(3))
+#print(joynernacci(5))
+#print(joynernacci(12))
+
+meetings = [Meeting(datetime(2018, 8, 1, 9, 0, 0), datetime(2018, 8, 1, 11, 0, 0)),
+            Meeting(datetime(2018, 8, 1, 15, 0, 0), datetime(2018, 8, 1, 16, 0, 0)),
+            Meeting(datetime(2018, 8, 2, 9, 0, 0), datetime(2018, 8, 2, 10, 0, 0))]
+print(check_availability(meetings, datetime(2018, 8, 1, 12, 0, 0)))
+print(check_availability(meetings, datetime(2018, 8, 1, 10, 0, 0)))
+

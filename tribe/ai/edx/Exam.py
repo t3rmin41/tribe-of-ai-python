@@ -29,3 +29,14 @@ def joynernacci(index):
         return joynernacci(index - 1) + joynernacci(index - 2)
     if index % 2 == 1 :
         return abs(joynernacci(index - 1) - joynernacci(index -2))
+
+from typing import List
+from datetime import datetime
+
+from tribe.ai.edx.ExamClasses import Meeting
+
+def check_availability(meetings: List[Meeting], tstamp: datetime):
+    for meeting in meetings:
+        if tstamp.ctime() >= meeting.start_time.ctime() and tstamp.ctime() <= meeting.end_time.ctime() :
+            return False
+    return True
