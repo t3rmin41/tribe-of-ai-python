@@ -73,7 +73,13 @@ meetings = [Meeting(datetime(2018, 8, 1, 9, 0, 0), datetime(2018, 8, 1, 11, 0, 0
 #print(check_horse_winner(("HORSE", "HOR", "HORS", "HORSE")))
 #print(check_horse_winner(("HORSE", "HORSE", "HORS", "HORSE")))
 
-print(are_anagrams("Elvis", "Lives"))
-print(are_anagrams("Elvis", "Live Viles"))
-print(are_anagrams("Eleven plus two", "Twelve plus one"))
-print(are_anagrams("Nine minus seven", "Five minus three"))
+#print(are_anagrams("Elvis", "Lives"))
+#print(are_anagrams("Elvis", "Live Viles"))
+#print(are_anagrams("Eleven plus two", "Twelve plus one"))
+#print(are_anagrams("Nine minus seven", "Five minus three"))
+
+print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+
+#print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+#print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))

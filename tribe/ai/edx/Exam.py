@@ -68,3 +68,20 @@ def are_anagrams(first, second):
     first.sort()
     second.sort()
     return str(first) == str(second)
+
+def alter_list(str_list, int_list):
+    for index in int_list :
+        for i in range(0, len(str_list)):
+            if i == index and str_list[i].islower():
+                str_list[i] = str_list[i].upper()
+            elif i == index and str_list[i].isupper():
+                str_list[i] = str_list[i].lower()
+    return str_list
+
+def alter_list2(str_list, int_list): # doesn't work with enumerate() as it creates local variables which are not assigned to initial parameter list
+    for i, word in enumerate(str_list) :
+        if i in int_list and word.islower() :
+            word = word.upper()
+        elif i in int_list and word.isupper() :
+            word = word.lower()
+    return str_list
