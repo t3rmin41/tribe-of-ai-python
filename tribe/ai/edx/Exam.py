@@ -67,6 +67,7 @@ def are_anagrams(first, second):
     second = [char for char in second.replace(" ", "").lower()]
     first.sort()
     second.sort()
+    #return first == second # also returns True if list elements are equal - does Python check equality element by element when '==' operator is used?
     return str(first) == str(second)
 
 def alter_list(str_list, int_list):

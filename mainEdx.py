@@ -89,9 +89,18 @@ d = {"bat": "pig", "pig": "cat", "cat": "dog", "dog": "ant",
      "cod": "hen", "hog": "fox", "fox": "jay", "jay": "doe",
      "rat": "ram", "ram": "rat"}
 
-print(rabbit_hole(d, "bat"))
-print(rabbit_hole(d, "ewe"))
-print(rabbit_hole(d, "jay"))
-print(rabbit_hole(d, "yak"))
-print(rabbit_hole(d, "rat"))
-print(rabbit_hole(d, "bla"))
+#print(rabbit_hole(d, "bat"))
+#print(rabbit_hole(d, "ewe"))
+#print(rabbit_hole(d, "jay"))
+#print(rabbit_hole(d, "yak"))
+#print(rabbit_hole(d, "rat"))
+#print(rabbit_hole(d, "bla"))
+
+list1 = ['e', 'a', 'b']
+list2 = ['e', 'a', 'c']
+list3 = ['e', 'a', 'b']
+
+print("list1 == list2 should be False :", list1 == list2)
+print("list1 == list3 should be True :", list1 == list3)
+
+# What is the difference between tuple and dictionary in Python? tuple - list of elements of different types, dictionary - strictly string-to-any map?
