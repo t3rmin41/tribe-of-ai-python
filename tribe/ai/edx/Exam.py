@@ -53,3 +53,11 @@ def check_horse_winner(players_data: List[str]):
     if len(players_index) > 1 and len(players_index) < len(players_data) :
         return "Players " + ", ".join(map(str, players_index)) + ": keep playing!"
     else: return "Everyone: keep playing!"
+
+def count_capital_consonants(input_str):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    count = 0
+    for letter in input_str :
+        if letter.lower() not in vowels and letter.isupper() :
+            count += 1
+    return count
