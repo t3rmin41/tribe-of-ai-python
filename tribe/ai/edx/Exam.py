@@ -61,3 +61,10 @@ def count_capital_consonants(input_str):
         if letter.lower() not in vowels and letter.isupper() :
             count += 1
     return count
+
+def are_anagrams(first, second):
+    first = [char for char in first.replace(" ", "").lower()]
+    second = [char for char in second.replace(" ", "").lower()]
+    first.sort()
+    second.sort()
+    return str(first) == str(second)
