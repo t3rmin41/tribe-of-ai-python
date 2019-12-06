@@ -6,3 +6,8 @@ class Name:
         return self.first_name+" "+self.last_name
     def find_sortable_name(self):
         return self.last_name + ", " + self.first_name[0]
+
+class Meeting:
+    def __init__(self, start_time, end_time):
+        self.start_time = start_time
+        self.end_time = end_time

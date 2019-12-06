@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
 # rule of thumb for big O notation : the number of nested loops (nested!) on the same list is power of n
 # e.g. O(n^2) - there are 2 nested loops, O(n) [linear] - one nested loop. Or there can be several loops on the same list
@@ -5,7 +7,7 @@ from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, 
 from tribe.ai.edx.SearchAlgorithms import linear
 from tribe.ai.edx.Exam import *
 
-from tribe.ai.edx.ExamClasses import Name
+from tribe.ai.edx.ExamClasses import Name, Meeting
 
 # Below are some lines of code that will test your function.
 # You can change the value of the variable(s) to test your
@@ -57,6 +59,48 @@ test_name = Name("David", "Joyner")
 #print(test_name.find_printed_name()) # prints "None" on the last line for some reason
 #print(test_name.find_sortable_name())
 
-print(joynernacci(3))
-print(joynernacci(5))
-print(joynernacci(12))
+#print(joynernacci(3))
+#print(joynernacci(5))
+#print(joynernacci(12))
+
+meetings = [Meeting(datetime(2018, 8, 1, 9, 0, 0), datetime(2018, 8, 1, 11, 0, 0)),
+            Meeting(datetime(2018, 8, 1, 15, 0, 0), datetime(2018, 8, 1, 16, 0, 0)),
+            Meeting(datetime(2018, 8, 2, 9, 0, 0), datetime(2018, 8, 2, 10, 0, 0))]
+#print(check_availability(meetings, datetime(2018, 8, 1, 12, 0, 0)))
+#print(check_availability(meetings, datetime(2018, 8, 1, 10, 0, 0)))
+
+#print(check_horse_winner(("HOR", "HORS", "H", "HO")))
+#print(check_horse_winner(("HORSE", "HOR", "HORS", "HORSE")))
+#print(check_horse_winner(("HORSE", "HORSE", "HORS", "HORSE")))
+
+#print(are_anagrams("Elvis", "Lives"))
+#print(are_anagrams("Elvis", "Live Viles"))
+#print(are_anagrams("Eleven plus two", "Twelve plus one"))
+#print(are_anagrams("Nine minus seven", "Five minus three"))
+
+print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+
+print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+
+d = {"bat": "pig", "pig": "cat", "cat": "dog", "dog": "ant",
+     "cow": "bee", "bee": "elk", "elk": "fly", "ewe": "cod",
+     "cod": "hen", "hog": "fox", "fox": "jay", "jay": "doe",
+     "rat": "ram", "ram": "rat"}
+
+#print(rabbit_hole(d, "bat"))
+#print(rabbit_hole(d, "ewe"))
+#print(rabbit_hole(d, "jay"))
+#print(rabbit_hole(d, "yak"))
+#print(rabbit_hole(d, "rat"))
+#print(rabbit_hole(d, "bla"))
+
+list1 = ['e', 'a', 'b']
+list2 = ['e', 'a', 'c']
+list3 = ['e', 'a', 'b']
+
+#print("list1 == list2 should be False :", list1 == list2)
+#print("list1 == list3 should be True :", list1 == list3)
+
+# What is the difference between tuple and dictionary in Python? tuple - list of elements of different types, dictionary - strictly any-to-any map?
