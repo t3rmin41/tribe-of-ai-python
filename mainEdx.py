@@ -78,11 +78,11 @@ meetings = [Meeting(datetime(2018, 8, 1, 9, 0, 0), datetime(2018, 8, 1, 11, 0, 0
 #print(are_anagrams("Eleven plus two", "Twelve plus one"))
 #print(are_anagrams("Nine minus seven", "Five minus three"))
 
-#print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
-#print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
 
-#print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
-#print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
 
 d = {"bat": "pig", "pig": "cat", "cat": "dog", "dog": "ant",
      "cow": "bee", "bee": "elk", "elk": "fly", "ewe": "cod",
@@ -100,7 +100,7 @@ list1 = ['e', 'a', 'b']
 list2 = ['e', 'a', 'c']
 list3 = ['e', 'a', 'b']
 
-print("list1 == list2 should be False :", list1 == list2)
-print("list1 == list3 should be True :", list1 == list3)
+#print("list1 == list2 should be False :", list1 == list2)
+#print("list1 == list3 should be True :", list1 == list3)
 
-# What is the difference between tuple and dictionary in Python? tuple - list of elements of different types, dictionary - strictly string-to-any map?
+# What is the difference between tuple and dictionary in Python? tuple - list of elements of different types, dictionary - strictly any-to-any map?

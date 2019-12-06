@@ -79,12 +79,15 @@ def alter_list(str_list, int_list):
                 str_list[i] = str_list[i].lower()
     return str_list
 
-def alter_list2(str_list, int_list): # doesn't work with enumerate() as it creates local variables which are not assigned to initial parameter list
-    for i, word in enumerate(str_list) :
-        if i in int_list and word.islower() :
-            word = word.upper()
-        elif i in int_list and word.isupper() :
-            word = word.lower()
+def alter_list2(str_list, int_list): # doesn't work with enumerate() as enumerate() creates local variables which are not assigned to parameter list elements or because i, word is tuple?
+    for index in int_list:
+        for i, word in enumerate(str_list) :
+            if i == index and word.islower() :
+                #word = word.upper()
+                word.upper()
+            elif i == index and word.isupper() :
+                #word = word.lower()
+                word.lower()
     return str_list
 
 def rabbit_hole(d: dict, key):
