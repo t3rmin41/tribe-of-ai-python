@@ -1,13 +1,13 @@
 from datetime import datetime
 
-from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
+from modules.tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
 # rule of thumb for big O notation : the number of nested loops (nested!) on the same list is power of n
 # e.g. O(n^2) - there are 2 nested loops, O(n) [linear] - one nested loop. Or there can be several loops on the same list
 # but if loops are not nested - the complexity is O(n) [linear]
-from tribe.ai.edx.SearchAlgorithms import linear
-from tribe.ai.edx.Exam import *
+from modules.tribe.ai.edx.SearchAlgorithms import linear
+from modules.tribe.ai.edx.Exam import *
 
-from tribe.ai.edx.ExamClasses import Name, Meeting
+from modules.tribe.ai.edx.ExamClasses import Name, Meeting
 
 # Below are some lines of code that will test your function.
 # You can change the value of the variable(s) to test your
@@ -104,3 +104,6 @@ list3 = ['e', 'a', 'b']
 #print("list1 == list3 should be True :", list1 == list3)
 
 # What is the difference between tuple and dictionary in Python? tuple - list of elements of different types, dictionary - strictly any-to-any map?
+
+encrypt_dict = { "e": "o", "o": "a"}
+lazy_encrypt("./resources/inputFile.txt", "./resources/outputFile.txt", encrypt_dict)
