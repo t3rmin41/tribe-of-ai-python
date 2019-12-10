@@ -99,6 +99,21 @@ def rabbit_hole(d: dict, key):
     return dict_pair_tuple[0]
 
 def lazy_encrypt(inputFilename, outputFilename, encrypt_dict):
+    outputFile = open(outputFilename, "w+")
+    inputFile = open(inputFilename, "r")
+    try:
+        line = inputFile.readline()
+        while line:
+            changedLine = "".join(encrypt_dict[key] if key in encrypt_dict else key for key in line)
+            outputFile.write(changedLine)
+            line = inputFile.readline()
+    except IOError as ioerror:
+        print("IOError :", ioerror)
+    finally:
+        inputFile.close()
+        outputFile.close()
+
+def lazy_encrypt2(inputFilename, outputFilename, encrypt_dict):
     try:
         outputFile = open(outputFilename, "w+")
         with open(inputFilename, "r") as inputFile:
