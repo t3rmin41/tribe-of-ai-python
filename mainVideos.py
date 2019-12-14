@@ -63,5 +63,3 @@ class Multitalented(Poet, Writer):
 
 multitalented = Multitalented()
 multitalented.write() # writes whatever parameter in inheritance is first
-
-
