@@ -33,7 +33,7 @@ def joynernacci(index):
 from typing import List
 from datetime import datetime
 
-from tribe.ai.edx.ExamClasses import Meeting
+from modules.tribe.ai.edx.ExamClasses import Meeting
 
 #def check_availability(meetings, tstamp):
 def check_availability(meetings: List[Meeting], tstamp: datetime):
@@ -91,9 +91,39 @@ def alter_list2(str_list, int_list): # doesn't work with enumerate() as enumerat
     return str_list
 
 def rabbit_hole(d: dict, key):
-    value_tuple = (key, d.get(key))
-    while value_tuple[1] != None :
-        if d.get(value_tuple[1]) == key :
+    dict_pair_tuple = (key, d.get(key))
+    while dict_pair_tuple[1] != None :
+        if d.get(dict_pair_tuple[1]) == key :
             return False
-        value_tuple = (value_tuple[1], d.get(value_tuple[1]))
-    return value_tuple[0]
+        dict_pair_tuple = (dict_pair_tuple[1], d.get(dict_pair_tuple[1]))
+    return dict_pair_tuple[0]
+
+def lazy_encrypt(inputFilename, outputFilename, encrypt_dict):
+    outputFile = open(outputFilename, "w+")
+    inputFile = open(inputFilename, "r")
+    try:
+        line = inputFile.readline()
+        while line:
+            changedLine = "".join(encrypt_dict[key] if key in encrypt_dict else key for key in line)
+            outputFile.write(changedLine)
+            line = inputFile.readline()
+    except IOError as ioerror:
+        print("IOError :", ioerror)
+    finally:
+        inputFile.close()
+        outputFile.close()
+
+def lazy_encrypt2(inputFilename, outputFilename, encrypt_dict):
+    try:
+        outputFile = open(outputFilename, "w+")
+        with open(inputFilename, "r") as inputFile:
+            line = inputFile.readline()
+            while line:
+                changedLine = "".join(encrypt_dict[key] if key in encrypt_dict else key for key in line)
+                outputFile.write(changedLine)
+                line = inputFile.readline()
+    except IOError as ioerror:
+        print("IOError :", ioerror)
+    finally:
+        inputFile.close()
+        outputFile.close()

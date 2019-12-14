@@ -1,13 +1,13 @@
 from datetime import datetime
 
-from tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
+from modules.tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
 # rule of thumb for big O notation : the number of nested loops (nested!) on the same list is power of n
 # e.g. O(n^2) - there are 2 nested loops, O(n) [linear] - one nested loop. Or there can be several loops on the same list
 # but if loops are not nested - the complexity is O(n) [linear]
-from tribe.ai.edx.SearchAlgorithms import linear
-from tribe.ai.edx.Exam import *
+from modules.tribe.ai.edx.SearchAlgorithms import linear
+from modules.tribe.ai.edx.Exam import *
 
-from tribe.ai.edx.ExamClasses import Name, Meeting
+from modules.tribe.ai.edx.ExamClasses import Name, Meeting, FullName
 
 # Below are some lines of code that will test your function.
 # You can change the value of the variable(s) to test your
@@ -53,11 +53,11 @@ some_number = 17
 #print("collatz2(", some_number, ") : ", end = "")
 #print(collatz2(some_number))
 
-test_name = Name("David", "Joyner")
-#print(test_name.first_name)
-#print(test_name.last_name)
-#print(test_name.find_printed_name()) # prints "None" on the last line for some reason
-#print(test_name.find_sortable_name())
+test_name1 = Name("David", "Joyner")
+print(test_name1.first_name)
+print(test_name1.last_name)
+print(test_name1.find_printed_name())
+print(test_name1.find_sortable_name())
 
 #print(joynernacci(3))
 #print(joynernacci(5))
@@ -78,11 +78,11 @@ meetings = [Meeting(datetime(2018, 8, 1, 9, 0, 0), datetime(2018, 8, 1, 11, 0, 0
 #print(are_anagrams("Eleven plus two", "Twelve plus one"))
 #print(are_anagrams("Nine minus seven", "Five minus three"))
 
-print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
-print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+#print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+#print(alter_list(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
 
-print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
-print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
+#print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2]))
+#print(alter_list2(["hello", "WORLD", "HOW", "are", "you"], [0, 2, 2]))
 
 d = {"bat": "pig", "pig": "cat", "cat": "dog", "dog": "ant",
      "cow": "bee", "bee": "elk", "elk": "fly", "ewe": "cod",
@@ -104,3 +104,12 @@ list3 = ['e', 'a', 'b']
 #print("list1 == list3 should be True :", list1 == list3)
 
 # What is the difference between tuple and dictionary in Python? tuple - list of elements of different types, dictionary - strictly any-to-any map?
+
+encrypt_dict = { "e": "o", "o": "a"}
+#lazy_encrypt("./resources/inputFile.txt", "./resources/outputFile.txt", encrypt_dict)
+
+test_name2 = FullName("David", "Abraham", "Joyner")
+print(test_name2.first_name)
+print(test_name2.last_name)
+print(test_name2.find_printed_name())
+print(test_name2.find_sortable_name())
