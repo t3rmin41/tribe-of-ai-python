@@ -27,7 +27,8 @@ def isIPv4Address(inputString: str) -> bool: # optional typing, return type - bo
     if len(int_octets) != 4 :
         return False
     for octet in int_octets :
-        if octet > 255 or octet < 0 :
+        #if octet > 255 or octet < 0 :
+        if not 0 <= octet <= 255 : #Python way of range (like in Maths)
             return False
     return True
 
