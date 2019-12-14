@@ -11,17 +11,20 @@ class Pizza(DoughFactory):
             print("Adding: %s" % topping)
 
 class OrganicDoughFactory(DoughFactory):
+#class OrganicDoughFactory:
     def get_dough(self):
         return "pure untreated wheat dough"
 
 class OrganicPizza(Pizza, OrganicDoughFactory):
     pass
 
-#Pizza().order_pizza("Pepperoni", "Bell Pepper")
+Pizza().order_pizza("Pepperoni", "Bell Pepper")
 print("")
-#OrganicPizza().order_pizza("Sausage", "Mushroom") #prints "Making pie with pure untreated wheat dough" though inherits from 'Pizza' which inherits from 'DoughFactory'
+OrganicPizza().order_pizza("Sausage", "Mushroom") #prints "Making pie with pure untreated wheat dough" though inherits from 'Pizza' which inherits from 'DoughFactory'
 # which should print "insecticide treated wheat dough" because of "super()" call in Pizza. Why is that?
-# It's because inherited call to overridden method "get_dough"
+# It's because inherited call to overridden method "get_dough" is determined by OrganicPizza inherited types (not by Pizza's parent as intuitively many would think), and if
+# the direct parent (in this case - OrganicPizza direct parent OrganicDoughFactory) has the method of the same signature [signature = method name and parameters]
+# then get_dough() will be called from direct parent
 
 '''
   Inheritance "diamond" diagram
