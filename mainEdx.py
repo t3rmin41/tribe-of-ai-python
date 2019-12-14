@@ -106,7 +106,7 @@ list3 = ['e', 'a', 'b']
 # What is the difference between tuple and dictionary in Python? tuple - list of elements of different types, dictionary - strictly any-to-any map?
 
 encrypt_dict = { "e": "o", "o": "a"}
-#lazy_encrypt("./resources/inputFile.txt", "./resources/outputFile.txt", encrypt_dict)
+lazy_encrypt("./resources/inputFile.txt", "./resources/outputFile.txt", encrypt_dict)
 
 test_name2 = FullName("David", "Abraham", "Joyner")
 print(test_name2.first_name)

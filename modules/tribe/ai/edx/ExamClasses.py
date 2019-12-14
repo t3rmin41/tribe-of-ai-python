@@ -16,7 +16,7 @@ class FullName(Name):
     def find_sortable_name(self):
         return Name.find_sortable_name(self)
 
-class Meeting(object):
+class Meeting:
     def __init__(self, start_time, end_time):
         self.start_time = start_time
         self.end_time = end_time
