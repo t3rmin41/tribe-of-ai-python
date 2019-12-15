@@ -2,6 +2,7 @@ from modules.tribe.ai.intro.JourneyBegins import *
 from modules.tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
 from modules.tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
 from modules.tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, avoidObstacles, avoidObstacles2, boxBlur, minesweeper
+from modules.tribe.ai.intro.RainsOfReason import variableName
 
 '''
 
@@ -215,3 +216,15 @@ matrix1 = [[True, False, False],
           [False, False, False]]
 #print("minesweeper(", matrix1, ") : ", end = "")
 #print(minesweeper(matrix1))
+
+var_name1 = "var_1__Int"
+var_name2 = "qq-q"
+var_name3 = "a"
+print("variableName(", var_name1, ") : ", end = "")
+print(variableName(var_name1))
+
+print("variableName(", var_name2, ") : ", end = "")
+print(variableName(var_name2))
+
+print("variableName(", var_name3, ") : ", end = "")
+print(variableName(var_name3))
