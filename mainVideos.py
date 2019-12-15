@@ -26,6 +26,8 @@ OrganicPizza().order_pizza("Sausage", "Mushroom") #prints "Making pie with pure 
 # the direct parent (in this case - OrganicPizza direct parent OrganicDoughFactory) has the method of the same signature [signature = method name and parameters]
 # then get_dough() will be called from direct parent
 
+# So super() in Python means not direct parent, but next parent in inheritance line of child class
+
 '''
   Inheritance "diamond" diagram
 
