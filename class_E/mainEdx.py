@@ -1,13 +1,13 @@
 from datetime import datetime
 
-from modules.tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
+from class_E.modules.tribe.ai.edx.SortingAlgorithms import sort_with_bubbles, sort_with_select, mergesort
 # rule of thumb for big O notation : the number of nested loops (nested!) on the same list is power of n
 # e.g. O(n^2) - there are 2 nested loops, O(n) [linear] - one nested loop. Or there can be several loops on the same list
 # but if loops are not nested - the complexity is O(n) [linear]
-from modules.tribe.ai.edx.SearchAlgorithms import linear
-from modules.tribe.ai.edx.Exam import *
+from class_E.modules.tribe.ai.edx.SearchAlgorithms import linear
+from class_E.modules.tribe.ai.edx.Exam import *
 
-from modules.tribe.ai.edx.ExamClasses import Name, Meeting, FullName
+from class_E.modules.tribe.ai.edx.ExamClasses import Name, Meeting, FullName
 
 # Below are some lines of code that will test your function.
 # You can change the value of the variable(s) to test your

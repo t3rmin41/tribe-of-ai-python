@@ -1,8 +1,7 @@
-from modules.tribe.ai.intro.JourneyBegins import *
-from modules.tribe.ai.intro.SmoothSailing import allLongestStrings, commonCharacterCount, isLucky, sortByHeight, reverseInParentheses
-from modules.tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
-from modules.tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, avoidObstacles, avoidObstacles2, boxBlur, minesweeper
-from modules.tribe.ai.intro.RainsOfReason import variableName
+from class_E.modules.tribe.ai.intro.JourneyBegins import *
+from class_E.modules.tribe.ai.intro.ExploringWaters import alternatingSums, addBorder, areSimilar, arrayChange, palindromeRearranging
+from class_E.modules.tribe.ai.intro.IslandOfKnowledge import areEquallyStrong, isIPv4Address, avoidObstacles, avoidObstacles2, boxBlur, minesweeper
+from class_E.modules.tribe.ai.intro.RainsOfReason import variableName
 
 '''
 

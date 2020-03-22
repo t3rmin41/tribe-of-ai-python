@@ -1,8 +1,8 @@
-from modules.tribe.ai.pyth.MeetPyth import countBits, countBitsInLoop, modulus, simpleSort, baseConversion, mexFunction
-from modules.tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk, convertTabs, \
+from class_E.modules.tribe.ai.pyth.MeetPyth import countBits, countBitsInLoop, modulus, simpleSort, baseConversion, mexFunction
+from class_E.modules.tribe.ai.pyth.SlitheringInStrings import fixMessage, catWalk, convertTabs, \
     feedbackReview, isWordPalindrome, permutationCipher, competitiveEating, newStyleFormatting, getCommit, getNumericsFromString
-from modules.tribe.ai.pyth.LurkingInLists import listsConcatenation, twoTeams, removeTasks
-from modules.tribe.ai.pyth.LambdaIllusions import getPoints
+from class_E.modules.tribe.ai.pyth.LurkingInLists import listsConcatenation, twoTeams, removeTasks
+from class_E.modules.tribe.ai.pyth.LambdaIllusions import getPoints
 
 '''
 n = 4
