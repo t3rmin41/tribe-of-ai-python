@@ -41,7 +41,22 @@ df = pd.DataFrame([purchase_1, purchase_2, purchase_3], index = ["Store 1", "Sto
 
 #print(df.loc[:]["Item Purchased"])
 #print(df["Item Purchased"])
-print(df.T) # Transpose matrix
+#print(df.T) # Transpose matrix
 
 df["Cost"] = df["Cost"] - df["Cost"]*0.2
-print(df)
+#print(df)
+
+matrix = np.array([[11,12,13,14], [21,22,23,24], [31,32,33,34]])
+
+print(matrix)
+
+matrix = [[11,12,13,14],
+          [21,22,23,24],
+          [31,32,33,34]]
+
+transponded_matrix = pd.DataFrame(matrix).T
+print(transponded_matrix.to_string(index=False, header=False))
+
+print(transponded_matrix)
+
+print(transponded_matrix[2][2])
